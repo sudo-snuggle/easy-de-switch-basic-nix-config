@@ -85,9 +85,9 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.mirae = {
+  users.users.user = {
     isNormalUser = true;
-    description = "mirae";
+    description = "user";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
@@ -114,7 +114,7 @@
   	# xfce.thunar            # File manager 
  	# rofi                   # App launcher / window switcher
   	# dunst                  # Notification daemon
-        # feh                    # Wallpaper setter & simple image viewer
+    # feh                    # Wallpaper setter & simple image viewer
   	# flameshot              # Screenshot tool 
 	# pavucontrol            # Audio volume control 
   	# networkmanagerapplet   # Network tray icon
